@@ -2,7 +2,7 @@
 This application is designed with a built in browser.
 This application's image recognition is based on finding several pixels (non-adjacent pixels) on a small image and then comparing the same patern of pixels in the picture that the program took a screenshot of.
 
-This application is #NOT# finished, some of the techniques are a bit above my compehension.
+This application is NOT finished, some of the techniques are a bit above my compehension.
 
 This type of application was already completed by another user who now charges monthly fee for the program, also a friend of mine completed the program and gave me a copy of his work and honestly it is much better than the one that another program is charging for his.
 
