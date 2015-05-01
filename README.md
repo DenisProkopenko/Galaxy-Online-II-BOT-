@@ -20,3 +20,4 @@ What still needs progress
 
 
 Once again, this program is not finished and it is a little more than what I bargened for so I cannot complete it on my own.
++ Also those who download this program will have to change quite a bit of the coding, because it was designed to work off my laptop from my desktop, bt in the finial version it would just work of C/program files x86/ GO2/ Images
