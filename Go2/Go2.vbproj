@@ -1,0 +1,1741 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E4A86DDF-9E0C-4F69-B2CF-19F6516E73CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Go2.My.MyApplication</StartupObject>
+    <RootNamespace>Go2</RootNamespace>
+    <AssemblyName>Go2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Go2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Go2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Go2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Go2.Designer.vb">
+      <DependentUpon>Go2.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Go2.resx">
+      <DependentUpon>Go2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i10i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4hrhe3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10hrhe3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24hrhe3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24hrmetal.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30minhe3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfriend1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addfriend2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badge.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advtruce.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bagclose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bagclose2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bagclose3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bagclose4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bagitemfilter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bagitemfilter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bagitemfilter2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buildasteroid2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buildasteroid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buildasteroid.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottomImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chatselect.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chatselect2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chatselect3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CIB.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CIB.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CIB2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close9.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close10.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close13.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close14.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close21.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close20.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close18.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close16.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close15.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\commanderclose.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\commanderclose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\commanderclose2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\commanders.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\commanders2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\commanders3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\commanders4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConstLeo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Constellations3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Constellations2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Constellations.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConstCapricorn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConstAquarius.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\commanders5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConstLeo1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConstLibra1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConstPisces.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConstSagitarius.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConstTaurus1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConstVirgo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConstVirgo1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disconnected.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletemail3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletemail2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletemail2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletemail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletemail.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corsair.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dismissall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\end.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\end.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\end2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\end3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\end4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\end5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbfriendsnext2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbfriendsnext.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EZReward3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EZReward2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EZReward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enterSystem.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\end6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbfriendsprev.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fleetOk.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fleetOk2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fleetOk3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fleetOk4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fleetOk5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fleetOk6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harvest.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goldboost2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goldboost.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\friendaccept3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\friendaccept2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\friendaccept1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\friendaccept.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harvest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harvest2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harvest2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harvest3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harvestall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harvestall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harvestall1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\he3storagelabel2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\he3storagelabel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\he3boost.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harvestclose2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harvestclose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harvestclose.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harvestall2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\he3storagelabel3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\honor.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i1i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i2i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i9i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i8i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i7i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i6i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i5i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i4i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i3i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i11i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i12i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i13i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i14i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i15i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i21i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i20i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i19i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i18i2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i18i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i17i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i16i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i22i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i22i2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i23i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i24i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i25i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i26i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i27i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\increasefleet4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\increasefleet3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\increasefleet2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\increasefleet.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i30i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i29i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i28i.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\increasefleet5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\increasefleet6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\increasefleet7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inDashboard.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instance.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instance2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instancereward4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instancereward3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instancereward2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instancereward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instanceInfo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instance4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instance3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instancereward5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instancereward6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instancereward7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instancereward8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instancereward9.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instancereward10.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instancereward11.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instanceStart3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instanceStart2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instanceStart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instanceStart.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instancerunning2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instancerunning.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instancereward12.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instanceStart4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instanceStart5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instanceStart6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instanceStart7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instanceStart8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instanceStart9.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instanceStart10.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemuse3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemuse2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemuse2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemuse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itemuse.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instanceWindowMarker.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instanceStart11.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\league.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\league0remaining.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\league0remaining2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\league0remaining3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\league0remaining4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\league0remaining5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\league0remaining6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaguejoin.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaguego3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaguego2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaguego.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\league4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\league3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\league2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaguejoin2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaguejoin3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaguenomatch.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaguenomatch2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaguenomatch3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaguerunning.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaguewaiting.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mailclose.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaguewatch1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaguewatch.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaguewaiting1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mailclose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mailclose2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mailitemfilter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mailitemfilter2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mailitemfilter3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maintenance.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maintenance2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\military2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\military2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\military.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\military.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metalboost.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxcommanders2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxcommanders.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\military3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\military4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\military5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\military6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\military7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiple.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiple2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newyears.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multipleUseAll3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multipleUseAll2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multipleUseAll.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiple4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiple3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normalInstances.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normalInstances2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normalInstances3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normalInstances4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\normalInstances5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playButton.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r1r.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r1r1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r2r.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r2r1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r3r.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r3r1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r7r.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r6r1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r6r.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r5r1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r5r.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r4r1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r4r.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r7r1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r8r.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r8r1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r9r.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r9r1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r10r.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r10r1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res0dim.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removehe3button.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removeall3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removeall2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removeall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recruit2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recruit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res0reward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res0reward2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res0supply.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res0supply2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res1dim.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res1reward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res2supply.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res2reward2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res2reward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res2dim.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res1supply2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res1supply.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res1reward2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res2supply2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res3dim.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res3reward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res3reward2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res3supply.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res3supply2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res4dim.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res5reward2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res5reward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res5dim.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res4supply2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res4supply.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res4reward2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res4reward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res5supply.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res5supply2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res6dim.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res6reward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res6reward2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res6supply.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res6supply2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res8reward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res8dim.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res7supply2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res7supply.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res7reward2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res7reward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res7dim.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res8reward2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res8supply.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res8supply2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res9dim.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res9reward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res9reward2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res9supply.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resmetalmarker.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reshe3marker2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reshe3marker.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resgoldmarker2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resgoldmarker.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resdimmarker.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res9supply2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resmetalmarker2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ressupplymarker.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ressupplymarker1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restricted.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restricted0remaining.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restricted0remaining2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restricted0remaining3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restricted2remaining.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restricted2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restricted1remaining1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restricted1remaining.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restricted1passportremaining3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restricted1passportremaining2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restricted1passportremaining.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restricted2remaining2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restricted2remaining3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restricted3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restrictedbox.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectshipsnextpage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectshipsnextpage2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selectshipsprevpage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spacebase5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spacebase4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spacebase3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spacebase2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spacebase.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spacebase.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\singlefleetremovehe3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spacebase6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spacebase7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speedup.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speedup2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speedup3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speedup4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speedup5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speedup6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spin1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spinend.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spinend2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spinend3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spinok.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\station.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\startImage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spinskip3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spinskip2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spinskip.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spinrewardclose.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spinok2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\station2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\station3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\station4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\station5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\station6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\station7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplies.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplies7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplies6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplies5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplies4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplies3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplies2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplies.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplies8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyall1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyall2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyconfirm.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyconfirm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplynextpage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyFleetNameLabel4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyFleetNameLabel3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyFleetNameLabel2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyFleetNameLabel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyconfirm2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyconfirm1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplynextpage2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplynextpage3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyNoFleet.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyRemoveSingle.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyRemoveSingle2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyRemoveSingle3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyzerohe3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t15t2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t15t.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t10t2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t10t.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t5t2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t5t.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplyzerohe32.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t20t.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t20t2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t25t.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t25t2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t30t.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t30t2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t35t.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t50t2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t50t.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t45t2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t45t.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t40t2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t40t.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t35t2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\takeitems.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\takeitems.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\takeitems2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\takeitems3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\takeitems4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\territory.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\territory.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\territory2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\territory3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\territory4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti5ti.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti5ti2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti10ti.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti25ti2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti25ti.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti20ti2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti20ti.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti15ti2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti15ti.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti10ti2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti30ti.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti30ti2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti35ti.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti35ti2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti40ti.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti40ti2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti45ti.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti50ti2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti50ti.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ti45ti2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treasurebox.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treasurebox2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treasurebox3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trial2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trial.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treasurerewardconfirm2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treasurerewardconfirm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treasurerewardconfirm.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treasurebox5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treasurebox4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trial3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\underattack.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\underattack2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse9.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheel4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheelbuyandspin.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheelbuyandspin2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheelbuyandspin3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheelbuyandspin4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheelbuyandspin5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheelmenu.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheelmenu2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheelmenu3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wheelmenu4.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
